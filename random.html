@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<style>
+form{background-color:orange;padding-top:25px;padding-down:50px;padding-left:50px;padding-right:50px}
+p{color:blue;font-size:15px}
+h2{background-color:cyan;color:red;font-size:40px}
+label{color:blue;font-size:20px;}
+button{background-color:blue;color:white};
+</style>
+</head>
+<body style="background-color:gold;padding-left:90px;padding-right:90px;padding-top:25px;padding-down:50px;">
+<h1 style="color:crimson;font-size:50px" align="center">SURVEY FORM</h1>
+<form action="connect.php" method="post">
+<h2>Personal Information</h2>
+<label for="fname"><b>First name:	</b></label>
+<input type="text" id="fname" name="fname"><br><br>
+<label for="lname"><b>Last name:	</b></label>
+<input type="text" id="lname" name="lname"><br><br>
+<label for="E-Mail"><b>E-Mail:	</b></label>
+<input type="text" id="E-Mail" name="email"><br><br>
+<label for="E-Mail"><b>Conatct Number:	</b></label>
+<input type="text" id="E-Mail" name="number"><br><br>
+<label for="DOS"><b>Date of survey:	</b></label>
+<input type="date" id="DOS" name="DOS"><br><br>
+<label for="email"><b>Gender: </b></label>
+<label for="male"><input type="radio" name="gender" id="male" value="m">Male</label>
+<label for="female"><input type="radio" name="gender" id="female" value="f">Female</label>
+<label for="others"><input type="radio" name="gender" id="others" value="o">Other</label><br><br>
+
+<label for="a"><b>Age:	</b></label>
+<input type="text" id="a" name="age"><br><br>
+<h2>Survey questions</h2><br>
+
+<label for="life"><b>Describe your life during lockdown:</b></label><br>
+<textarea id="life" name="life" placeholder="Enter your text here" rows="5" cols="50"></textarea><br><br>
+
+<label for="infected"><b>Did you get infected with covid-19?</b></label>
+<select name="infected", id="option">
+<option value="Choose">Choose</option>
+<option value="yes">Yes</option>
+<option value="no">No</option>
+<option value="don't know">Don't know</option></select><br><br>
+
+<label for="vacc"><b>Did you get vaccinated?</b></label>
+<select name="vacc", id="vacc">
+<option value="Choose">Choose</option>
+<option value="no">No</option>
+<option value="single">Only single dose</option>
+<option value="both">Both doses</option></select><br><br>
+
+<label for="job"><b>Did you lost your job during lockdown?</b></label>
+<select name="job", id="job">
+<option value="Choose">Choose</option>
+<option value="yes">Yes</option>
+<option value="no">No</option></option></select><br><br>
+
+<label for="word"><b>Describe your lockdown in one word from following words: </b></label><br>
+<input type="radio" id="male" name="word" value="Depressing">
+<label for="male">Depressing</label><br>
+<input type="radio" id="female" name="word" value="Boring">
+<label for="female">Boring</label><br>
+<input type="radio" id="male" name="word" value="Good">
+<label for="male">Good</label><br>
+<input type="radio" id="female" name="word" value="Marvelous">
+<label for="female">Marvelous</label><br><br>
+
+<label for="salary"><b>Did you receive full time salary during lockdown?</b></label>
+<select name="salary", id="salary">
+<option value="Choose">Choose</option>
+<option value="Yes">Yes</option>
+<option value="No">No</option></option></select><br><br>
+
+<label for="idea"><b>Was lockdown a good idea from your perspective?</b></label><br>
+<input type="radio" id="yes" name="idea" value="yes">
+<label for="yes">Yes</label><br>
+<input type="radio" id="no" name="idea" value="no" onclick="myfuntion()">
+<label for="no" >No</label><br>
+
+<input type="submit" style="background-color:blue;color:white;font-size:20px;align:right">
+<input type="reset" style="background-color:blue;color:white;font-size:20px;text-align:center"><br><br>
+</form>
+<script>
+function myfunction(){
+<p>If not, enter your idea,if possible</p><br>
+<textarea id="idea" name="yidea" placeholder="Enter your text here" rows="5" cols="50"></textarea><br><br>
+}
+
+</body>
+</html>
